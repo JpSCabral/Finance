@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack - Finance Control System</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>FinTrack</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="active">Dashboard</a>
+                    <a href="#">Transactions</a>
+                    <a href="#">Budgets</a>
+                    <a href="#">Reports</a>
+                    <a href="#">Goals</a>
+                </div>
+                <div class="user-actions">
+                    <button class="btn btn-outline">
+                        <i class="fas fa-bell"></i>
+                    </button>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Add Transaction
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="summary-cards">
+            <div class="summary-card">
+                <h3>Total Balance</h3>
+                <div class="amount">$5,240.50</div>
+                <div class="change positive">
+                    <i class="fas fa-arrow-up"></i> 3.5% from last month
+                </div>
+            </div>
+            <div class="summary-card">
+                <h3>Income</h3>
+                <div class="amount">$8,120.30</div>
+                <div class="change positive">
+                    <i class="fas fa-arrow-up"></i> 2.1% from last month
+                </div>
+            </div>
+            <div class="summary-card">
+                <h3>Expenses</h3>
+                <div class="amount">$2,879.80</div>
+                <div class="change negative">
+                    <i class="fas fa-arrow-up"></i> 1.8% from last month
+                </div>
+            </div>
+            <div class="summary-card">
+                <h3>Savings Rate</h3>
+                <div class="amount">35.5%</div>
+                <div class="change positive">
+                    <i class="fas fa-arrow-up"></i> 0.8% from last month
+                </div>
+            </div>
+        </div>
+        
+        <div class="dashboard">
+            <div class="main-content">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Recent Transactions</h2>
+                        <button class="btn btn-outline">View All</button>
+                    </div>
+                    <div class="card-body">
+                        <table class="transactions-list">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Category</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="transaction-name">
+                                            <div class="category-icon category-food">
+                                                <i class="fas fa-utensils"></i>
+                                            </div>
+                                            <div>
+                                                <div>Grocery Shopping</div>
+                                                <small class="text-secondary">Whole Foods</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>March 10, 2025</td>
+                                    <td>Food</td>
+                                    <td class="negative">-$128.75</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="transaction-name">
+                                            <div class="category-icon category-income">
+                                                <i class="fas fa-briefcase"></i>
+                                            </div>
+                                            <div>
+                                                <div>Salary Payment</div>
+                                                <small class="text-secondary">ABC Company</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>March 5, 2025</td>
+                                    <td>Income</td>
+                                    <td class="positive">+$4,250.00</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="transaction-name">
+                                            <div class="category-icon category-transport">
+                                                <i class="fas fa-gas-pump"></i>
+                                            </div>
+                                            <div>
+                                                <div>Gas Station</div>
+                                                <small class="text-secondary">Shell</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>March 3, 2025</td>
+                                    <td>Transport</td>
+                                    <td class="negative">-$45.50</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="transaction-name">
+                                            <div class="category-icon category-shopping">
+                                                <i class="fas fa-shopping-bag"></i>
+                                            </div>
+                                            <div>
+                                                <div>Online Purchase</div>
+                                                <small class="text-secondary">Amazon</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>March 1, 2025</td>
+                                    <td>Shopping</td>
+                                    <td class="negative">-$89.99</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Budget</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="budget-progress">
+                            <div class="budget-item">
+                                <h4>
+                                    <span>Food</span>
+                                    <span>$420 / $500</span>
+                                </h4>
+                                <div class="progress-bar">
+                                    <div class="progress progress-warning" style="width: 84%"></div>
+                                </div>
+                            </div>
+                            <div class="budget-item">
+                                <h4>
+                                    <span>Transport</span>
+                                    <span>$75 / $200</span>
+                                </h4>
+                                <div class="progress-bar">
+                                    <div class="progress progress-good" style="width: 38%"></div>
+                                </div>
+                            </div>
+                            <div class="budget-item">
+                                <h4>
+                                    <span>Entertainment</span>
+                                    <span>$220 / $200</span>
+                                </h4>
+                                <div class="progress-bar">
+                                    <div class="progress progress-danger" style="width: 110%"></div>
+                                </div>
+                            </div>
+                            <div class="budget-item">
+                                <h4>
+                                    <span>Shopping</span>
+                                    <span>$150 / $300</span>
+                                </h4>
+                                <div class="progress-bar">
+                                    <div class="progress progress-good" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card calendar">
+                    <div class="card-header">
+                        <h2 class="card-title">March 2025</h2>
+                        <div class="calendar-controls">
+                            <button><i class="fas fa-chevron-left"></i></button>
+                            <button><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="calendar-grid">
+                            <div class="calendar-day">M</div>
+                            <div class="calendar-day">T</div>
+                            <div class="calendar-day">W</div>
+                            <div class="calendar-day">T</div>
+                            <div class="calendar-day">F</div>
+                            <div class="calendar-day">S</div>
+                            <div class="calendar-day">S</div>
+                            
+                            <!-- Days -->
+                            <div class="calendar-day"></div>
+                            <div class="calendar-day"></div>
+                            <div class="calendar-day"></div>
+                            <div class="calendar-day"></div>
+                            <div class="calendar-day"></div>
+                            <div class="calendar-day">1</div>
+                            <div class="calendar-day">2</div>
+                            
+                            <div class="calendar-day">3</div>
+                            <div class="calendar-day">4</div>
+                            <div class="calendar-day has-event">5</div>
+                            <div class="calendar-day">6</div>
+                            <div class="calendar-day">7</div>
+                            <div class="calendar-day">8</div>
+                            <div class="calendar-day">9</div>
+                            
+                            <div class="calendar-day has-event">10</div>
+                            <div class="calendar-day">11</div>
+                            <div class="calendar-day today">12</div>
+                            <div class="calendar-day has-event">13</div>
+                            <div class="calendar-day">14</div>
+                            <div class="calendar-day">15</div>
+                            <div class="calendar-day">16</div>
+                            
+                            <div class="calendar-day">17</div>
+                            <div class="calendar-day">18</div>
+                            <div class="calendar-day">19</div>
+                            <div class="calendar-day">20</div>
+                            <div class="calendar-day has-event">21</div>
+                            <div class="calendar-day">22</div>
+                            <div class="calendar-day">23</div>
+                            
+                            <div class="calendar-day">24</div>
+                            <div class="calendar-day">25</div>
+                            <div class="calendar-day">26</div>
+                            <div class="calendar-day">27</div>
+                            <div class="calendar-day">28</div>
+                            <div class="calendar-day">29</div>
+                            <div class="calendar-day">30</div>
+                            
+                            <div class="calendar-day">31</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

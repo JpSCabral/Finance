@@ -1,0 +1,209 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+}
+
+.summary-card {
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.summary-card.income {
+    background-color: #e6f7ed;
+    color: #2ecc71;
+}
+
+.summary-card.expenses {
+    background-color: #fce9e9;
+    color: #e74c3c;
+}
+
+.summary-card.balance {
+    background-color: #eaf2f8;
+    color: #3498db;
+}
+
+.summary-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.summary-card .amount {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.form-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.form-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.transactions-container {
+    flex: 2;
+    min-width: 300px;
+}
+
+.filter-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter-controls input, .filter-controls select {
+    flex: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 12px;
+    font-weight: 600;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.income-row {
+    background-color: #f8fffa;
+}
+
+.expense-row {
+    background-color: #fff9f9;
+}
+
+.amount-cell.income {
+    color: #2ecc71;
+    font-weight: 500;
+}
+
+.amount-cell.expense {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+.action-cell button {
+    width: auto;
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    margin-right: 5px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 30px;
+    color: #888;
+}
+
+.chart-container {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .summary {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .summary-card {
+        width: 100%;
+    }
+}
